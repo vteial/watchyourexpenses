@@ -1,0 +1,6 @@
+language: groovy
+script: 'gradle -q -b core/build.gradle check'
+notifications:
+  email:
+    recipients:
+      - vteial@gmail.com
