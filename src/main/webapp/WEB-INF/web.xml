@@ -1,4 +1,8 @@
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+	<welcome-file-list>
+		<welcome-file>index.groovy</welcome-file>
+	</welcome-file-list>
+
 	<listener>
 		<listener-class>
 			groovyx.gaelyk.GaelykServletContextListener
@@ -76,7 +80,4 @@
 		</auth-constraint>
 	</security-constraint>
 
-	<welcome-file-list>
-		<welcome-file>index.groovy</welcome-file>
-	</welcome-file-list>
 </web-app>
