@@ -25,7 +25,7 @@ dependencies {
 	def gaeVersion = '1.7.4'
 	def slf4jVersion = '1.7.2'
 
-	groovy 'org.codehaus.groovy:groovy-all:2.0.66'
+	groovy 'org.codehaus.groovy:groovy-all:2.0.6'
 
 	compile "com.google.appengine:appengine-api-1.0-sdk:$gaeVersion",
 			"com.google.appengine:appengine-api-labs:$gaeVersion",
