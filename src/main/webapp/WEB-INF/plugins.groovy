@@ -1,3 +1,2 @@
 
-install wydPlugin
-
+install jsonRenderer

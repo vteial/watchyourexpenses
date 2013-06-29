@@ -1,0 +1,22 @@
+<form class="form-horizontal span5">
+<fieldset>
+	<legend>Sign In</legend>
+	<div class="control-group">
+       <label class="control-label" for="userId">User Id</label>
+		<div class="controls">
+			<input type="text" class="input-medium" id="userId" name="userId" data-ng-model="userId">
+		</div>
+	</div>
+	<div class="control-group">
+       <label class="control-label" for="password">Password</label>
+		<div class="controls">
+			<input type="password" class="input-medium" id="password" name="password" data-ng-model="password">
+		</div>
+	</div>
+	<div class="form-actions">
+		<button type="submit" class="btn btn-primary" data-ng-click="login()">Sign In</button>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<button type="reset" class="btn">Reset</button>
+    </div>
+</fieldset>	
+</form>
