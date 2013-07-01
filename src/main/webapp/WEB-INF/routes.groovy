@@ -1,5 +1,9 @@
 
-get "/", forward: "/WEB-INF/pages/index.gtpl"
-get "/datetime", forward: "/datetime.groovy"
+get "/favicon.ico", redirect: "/assets/img/fav-icon.png"
 
-get "/favicon.ico", redirect: "/images/gaelyk-small-favicon.png"
+get  '/',		       forward : '/index.groovy'
+get  '/index',	       forward : '/index.groovy'
+post '/authenticate',  forward : '/authenticate.groovy'
+get  '/logout',	       forward : '/logout.groovy'
+
+

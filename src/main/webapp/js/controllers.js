@@ -1,5 +1,3 @@
-'use strict';
-
 var appControllers = angular.module('app.controllers', []);
 
 appControllers.controller('navigatorController', function($scope, $log) {
