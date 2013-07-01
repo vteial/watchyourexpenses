@@ -1,24 +1,168 @@
-<form class="form-horizontal span5">
+<div class="row">
+
+<form class="form-horizontal span6">
 <fieldset>
-	<legend>log in</legend>
+	<legend>Register</legend>
 	<div class="control-group">
-       <label class="control-label" for="userId">user id</label>
+       <label class="control-label" for="userId">Email Id</label>
 		<div class="controls">
-			<input type="text" class="input-medium" id="userId" name="userId" data-ng-model="userId">
+			<input type="text" class="input-medium" id="userId" name="userId" data-ng-model="user.id">
 		</div>
 	</div>
 	<div class="control-group">
-       <label class="control-label" for="password">password</label>
+       <label class="control-label" for="password">Password</label>
 		<div class="controls">
-			<input type="password" class="input-medium" id="password" name="password" data-ng-model="password">
+			<input type="password" class="input-medium" id="password" name="password" data-ng-model="user.password">
+		</div>
+	</div>
+	<div class="control-group">
+       <label class="control-label" for="firstName">First Name</label>
+		<div class="controls">
+			<input type="text" class="input-large" id="firstName" name="firstName" data-ng-model="user.firstName">
+		</div>
+	</div>
+	<div class="control-group">
+       <label class="control-label" for="lastName">Last Name</label>
+		<div class="controls">
+			<input type="text" class="input-large" id="lastName" name="lastName" data-ng-model="user.lastName">
+		</div>
+	</div>
+	<div class="control-group">
+       <label class="control-label" for="dateOfBirth">Date Of Birth</label>
+		<div class="controls">
+			<datepicker data-ng-model="user.dateOfBirth" show-weeks="false"></datepicker>
+		</div>
+	</div>
+	<div class="control-group">
+       <label class="control-label" for="sex">Sex</label>
+		<div class="controls">
+			<div class="btn-group">
+		        <button type="button" class="btn" ng-model="user.sex" btn-radio="'Male'">
+		        	<i class="icon-male"></i>&nbsp;Male</button>
+		        <button type="button" class="btn" ng-model="user.sex" btn-radio="'Female'">
+		        	<i class="icon-female"></i>&nbsp;Female
+		        </button>
+		        <button type="button" class="btn" ng-model="user.sex" btn-radio="'Other'">
+		        	<i class="icon-female"></i>&nbsp;<i class="icon-male"></i>&nbsp;Other
+		        </button>
+		    </div>
+		</div>
+	</div>
+	<div class="control-group">
+       <label class="control-label" for="timeZone">Time Zone</label>
+		<div class="controls">
+			<input type="text" class="input-medium" id="timeZone" name="timeZone" data-ng-model="user.timeZone">
+		</div>
+	</div>
+	<div class="control-group">
+       <label class="control-label" for="addressOne">Address 1</label>
+		<div class="controls">
+			<input type="text" class="input-xlarge" id="addressOne" name="addressOne" data-ng-model="user.addressOne">
+		</div>
+	</div>
+	<div class="control-group">
+       <label class="control-label" for="addressTwo">Address 2</label>
+		<div class="controls">
+			<input type="text" class="input-xlarge" id="addressTwo" name="addressTwo" data-ng-model="user.addressTwo">
+		</div>
+	</div>
+	<div class="control-group">
+       <label class="control-label" for="city">City</label>
+		<div class="controls">
+			<input type="text" class="input-medium" id="city" name="city" data-ng-model="user.city">
+		</div>
+	</div>
+	<div class="control-group">
+       <label class="control-label" for="state">State</label>
+		<div class="controls">
+			<input type="text" class="input-medium" id="state" name="state" data-ng-model="user.state">
+		</div>
+	</div>
+	<div class="control-group">
+       <label class="control-label" for="country">Country</label>
+		<div class="controls">
+			<input type="text" class="input-medium" id="country" name="country" data-ng-model="user.country">
 		</div>
 	</div>
 	<div class="form-actions">
 		<button type="submit" class="btn btn-primary" data-ng-click="login()">
-			<i class="icon-signin"></i>&nbsp;log in
+			<i class="icon-signin"></i>&nbsp;Register
 		</button>
 		&nbsp;&nbsp;&nbsp;&nbsp;
-		<button type="reset" class="btn">reset</button>
+		<button type="reset" class="btn">Reset</button>
     </div>
 </fieldset>	
 </form>
+
+<div class="span6">
+
+	<form class="form-horizontal">
+	<fieldset>
+		<legend>Log In</legend>
+		<div class="control-group">
+	       <label class="control-label" for="userId">User/Email Id</label>
+			<div class="controls">
+				<input type="text" class="input-medium" id="userId" name="userId" data-ng-model="userId">
+			</div>
+		</div>
+		<div class="control-group">
+	       <label class="control-label" for="password">Password</label>
+			<div class="controls">
+				<input type="password" class="input-medium" id="password" name="password" data-ng-model="password">
+			</div>
+		</div>
+		<div class="form-actions">
+			<button type="submit" class="btn btn-primary" data-ng-click="login()">
+				<i class="icon-signin"></i>&nbsp;Log In
+			</button>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<button type="reset" class="btn">Reset</button>
+	    </div>
+	</fieldset>	
+	</form>
+
+	<div class="span6">&nbsp;</div>
+
+	<div class="span6">
+
+		<ul class="inline">
+			<li>
+			<button class="btn btn-danger" popover-placement="top" popover="comming soon...">
+				<i class="icon-google-plus"></i>&nbsp;<b class="muted">|</b>&nbsp;Login with google+
+			</button>
+			</li>
+			<li>
+			<button class="btn btn-primary" popover-placement="top" popover="comming soon...">
+				<i class="icon-facebook"></i>&nbsp;<b class="muted">|</b>&nbsp;Login with facebook
+			</button>
+			</li>
+			<li>
+			<button class="btn btn-info" popover-placement="top" popover="comming soon...">
+				<i class="icon-facebook"></i>&nbsp;<b class="muted">|</b>&nbsp;Login with twitter
+			</button>
+			</li>
+		</ul>
+	
+		<ul class="inline">
+			<li>
+			<button class="btn" popover-placement="bottom" popover="comming soon...">
+				<i class="icon-windows"></i>&nbsp;<b class="muted">|</b>&nbsp;Login with windows
+			</button>
+			</li>
+			<li>
+			<button class="btn" popover-placement="bottom" popover="comming soon...">
+				<i class="icon-github"></i>&nbsp;<b class="muted">|</b>&nbsp;Login with github
+			</button>
+			</li>
+			<li>
+			<button class="btn" popover-placement="bottom" popover="comming soon...">
+				<i class="icon-linkedin"></i>&nbsp;<b class="muted">|</b>&nbsp;Login with linkedin
+			</button>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+
+</div>

@@ -28,7 +28,7 @@
 		<div class="container">
 		    <ul class="nav">
 		    	<li class="">
-					<a class="brand" href="#"><strong>xpenses tracker</strong></a>
+					<a class="brand" href="#"><strong>Xpenses Tracker</strong></a>
 				</li>
 		    	<li class="divider-vertical"></li>
 		    	<li data-ng-class="{ active: $state.includes('home') }">
@@ -36,23 +36,42 @@
 		    	</li>
 		    	<li class="divider-vertical"></li>
 		    	<li data-ng-class="{ active: $state.includes('xpenses') }">
-		    		<a href="#/xpenses">xpenses</a>
+		    		<a href="#/xpenses">Xpenses</a>
+		    	</li>
+		    	<li data-ng-class="{ active: $state.includes('tags') }">
+		    		<a href="#/tags">Tags</a>
+		    	</li>
+		    	<li data-ng-class="{ active: $state.includes('reports') }">
+		    		<a href="#/reports">Reports</a>
+		    	</li>
+		    	<li data-ng-class="{ active: $state.includes('locations') }">
+		    		<a href="#/locations">Locations</a>
+		    	</li>
+		    	<li data-ng-class="{ active: $state.includes('currencys') }">
+		    		<a href="#/currencys">Currencies</a>
+		    	</li>
+		    	<li data-ng-class="{ active: $state.includes('users') }">
+		    		<a href="#/users">Users</a>
+		    	</li>
+		    	<li data-ng-class="{ active: $state.includes('roles') }">
+		    		<a href="#/roles">Roles</a>
 		    	</li>
 		    </ul>
-		    
 		    <ul class="nav pull-right">
 				<li class="divider-vertical"></li>
 				<li data-ng-class="{ active: $state.includes('settings') }">
-					<a href="#/settings">settings</a>
+					<a href="#/settings">
+						<i class="icon-cog"></i>&nbsp;Settings
+					</a>
 				</li>
 				<li data-ng-class="{ active: $state.includes('logout') }">
 					<a href="#/logout">
-						<i class="icon-signout"></i>&nbsp;logout
+						<i class="icon-signout"></i>&nbsp;Logout
 					</a>
 				</li>
 				<li data-ng-class="{ active: $state.includes('login') }">
 					<a href="#/login">
-						<i class="icon-signin"></i>&nbsp;login
+						<i class="icon-signin"></i>&nbsp;Login
 					</a>
 				</li>
 			</ul>
@@ -80,27 +99,34 @@
 		<small class="muted pull-left">
 			&copy; 2013 xpenses-tracker.appspot.com 
 			<b>|</b>
-			<a href="#/privacy">privacy</a>
+			<a href="#/privacy">Privacy</a>
 			<b>|</b>
-			<a href="#/security">security</a>
+			<a href="#/security">Security</a>
 			<b>|</b>
-			<a href="#/terms">terms</a>
+			<a href="#/terms">Terms</a>
 			<b>|</b>
-			<a href="mailto:vteial@gmail.com">contact</a>
+			<a href="mailto:vteial@gmail.com">Contact</a>
 			<b>|</b>
-			<a href="#/about">about</a>
+			<a href="#/about">About</a>
 		</small>
 	</div>
 	<div class="span6">
 		<small class="muted pull-right">
-			maintained by <a href="http://vteial.github.io/aboutme">eialarasu</a>
+			Maintained by 
+			<a href="http://vteial.github.io/aboutme">
+				<i class="icon-external-link"></i>&nbsp;Eialarasu
+			</a>
 			<b>|</b>
-			open source, hosted at 
+			<a href="http://en.wikipedia.org/wiki/Open-source_software">
+				<i class="icon-external-link"></i>&nbsp;Open source
+			</a>, hosted at 
 			<a href="https://github.com/vteial/xpenses-tracker">
-				<i class="icon-github"></i>&nbsp;github
+				<i class="icon-external-link"></i>&nbsp;Github
 			</a>
 			<b>|</b> 
-			<a href="https://github.com/vteial/xpenses-tracker/issues">report an issue</a>
+			<a href="https://github.com/vteial/xpenses-tracker/issues">
+				<i class="icon-external-link"></i>&nbsp;Report an issue
+			</a>
 		</small>
 	</div>
 </footer>
@@ -133,7 +159,17 @@
 <script src="js/filters.js" type="application/javascript"></script>
 <script src="js/directives.js" type="application/javascript"></script>
 <script src="js/services.js" type="application/javascript"></script>
+
 <script src="js/controllers.js" type="application/javascript"></script>
+<script src="js/controllers/xpensesController.js" type="application/javascript"></script>
+<script src="js/controllers/tagsController.js" type="application/javascript"></script>
+<script src="js/controllers/reportsController.js" type="application/javascript"></script>
+<script src="js/controllers/locationsController.js" type="application/javascript"></script>
+<script src="js/controllers/currencysController.js" type="application/javascript"></script>
+<script src="js/controllers/usersController.js" type="application/javascript"></script>
+<script src="js/controllers/rolesController.js" type="application/javascript"></script>
+<script src="js/controllers/settingsController.js" type="application/javascript"></script>
+
 <script src="js/routers.js" type="application/javascript"></script>
 <script src="js/main.js" type="application/javascript"></script>
 

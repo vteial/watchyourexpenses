@@ -4,25 +4,20 @@ appControllers.controller('navigatorController', function($scope, $log) {
 
 });
 
-appControllers.controller('indexController', function($scope, $log) {
-	$scope.viewTitle = 'Home!';
-});
-
-appControllers.controller('homeController', function($scope, $log) {
-	$scope.viewTitle = 'Home!';
-});
-
-appControllers.controller('xpensesController', function($scope, $log) {
-	$scope.viewTitle = 'Xpenses!';
-});
-
-appControllers.controller('settingsController', function($scope, $log) {
-	$scope.viewTitle = 'Settings!';
-});
-
 appControllers.controller('loginController', function($rootScope, $scope, $log,
 		$state, appServiceFacade) {
-	$scope.viewTitle = 'Login!';
+
+	$scope.timeZones = [];
+	appServiceFacade.timeZonesService.list().then(function(data) {
+		$scope.timeZones = data.data;
+	}, function(errorMessage) {
+		$log.error(errorMessage);
+	});
+	
+	var user = {
+		sex : 'Male'
+	}
+	$scope.user = user;
 
 	$scope.login = function() {
 		$rootScope.$emit("accessControlService.logInSuccess", {
@@ -41,6 +36,14 @@ appControllers.controller('logoutController', function($rootScope, $scope,
 			alertMessage : 'successfully signed out...'
 		});
 	};
+});
+
+appControllers.controller('indexController', function($scope, $log) {
+	$scope.viewTitle = 'Home!';
+});
+
+appControllers.controller('homeController', function($scope, $log) {
+	$scope.viewTitle = 'Home!';
 });
 
 appControllers.controller('aboutController', function($scope, $log) {

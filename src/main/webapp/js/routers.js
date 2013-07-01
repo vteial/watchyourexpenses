@@ -36,6 +36,66 @@ var router = function($stateProvider, $routeProvider, $urlRouterProvider,
 		}
 	});
 
+	stateProvider.state('tags', {
+		url : '/tags',
+		views : {
+			'viewA' : {
+				templateUrl : 'partials/tags.html',
+				controller : 'tagsController'
+			}
+		}
+	});
+
+	stateProvider.state('reports', {
+		url : '/reports',
+		views : {
+			'viewA' : {
+				templateUrl : 'partials/reports.html',
+				controller : 'reportsController'
+			}
+		}
+	});
+
+	stateProvider.state('locations', {
+		url : '/locations',
+		views : {
+			'viewA' : {
+				templateUrl : 'partials/locations.html',
+				controller : 'locationsController'
+			}
+		}
+	});
+
+	stateProvider.state('currencys', {
+		url : '/currencys',
+		views : {
+			'viewA' : {
+				templateUrl : 'partials/currencys.html',
+				controller : 'currencysController'
+			}
+		}
+	});
+
+	stateProvider.state('users', {
+		url : '/users',
+		views : {
+			'viewA' : {
+				templateUrl : 'partials/users.html',
+				controller : 'usersController'
+			}
+		}
+	});
+
+	stateProvider.state('roles', {
+		url : '/roles',
+		views : {
+			'viewA' : {
+				templateUrl : 'partials/roles.html',
+				controller : 'rolesController'
+			}
+		}
+	});
+
 	stateProvider = $stateProvider.state('settings', {
 		url : '/settings',
 		views : {
