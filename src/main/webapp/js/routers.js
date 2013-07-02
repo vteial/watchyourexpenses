@@ -1,6 +1,6 @@
 var router = function($stateProvider, $routeProvider, $urlRouterProvider,
 		appServiceFacade) {
-	$urlRouterProvider.otherwise('/');
+	//$urlRouterProvider.otherwise('/');
 
 	$routeProvider.when('/', {
 		redirectTo : '/index'
@@ -132,6 +132,46 @@ var router = function($stateProvider, $routeProvider, $urlRouterProvider,
 			'viewA' : {
 				templateUrl : 'partials/about.html',
 				controller : 'aboutController'
+			}
+		}
+	});
+
+	stateProvider.state('contact', {
+		url : '/contact',
+		views : {
+			'viewA' : {
+				templateUrl : 'partials/contact.html',
+				controller : 'contactController'
+			}
+		}
+	});
+
+	stateProvider.state('terms', {
+		url : '/terms',
+		views : {
+			'viewA' : {
+				templateUrl : 'partials/terms.html',
+				controller : 'termsController'
+			}
+		}
+	});
+
+	stateProvider.state('security', {
+		url : '/security',
+		views : {
+			'viewA' : {
+				templateUrl : 'partials/security.html',
+				controller : 'securityController'
+			}
+		}
+	});
+
+	stateProvider.state('privacy', {
+		url : '/privacy',
+		views : {
+			'viewA' : {
+				templateUrl : 'partials/privacy.html',
+				controller : 'privacyController'
 			}
 		}
 	});

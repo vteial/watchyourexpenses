@@ -51,7 +51,8 @@
 	<div class="control-group">
        <label class="control-label" for="timeZone">Time Zone</label>
 		<div class="controls">
-			<input type="text" class="input-medium" id="timeZone" name="timeZone" data-ng-model="user.timeZone">
+			<select ng-model="user.timeZone" ng-options="timeZone.displayValue for timeZone in timeZones">
+        	</select>
 		</div>
 	</div>
 	<div class="control-group">
@@ -81,13 +82,30 @@
 	<div class="control-group">
        <label class="control-label" for="country">Country</label>
 		<div class="controls">
-			<input type="text" class="input-medium" id="country" name="country" data-ng-model="user.country">
+			<select ng-model="user.country" ng-options="country.name for country in countries">
+        	</select>
+		</div>
+	</div>
+	<div class="control-group">
+       <label class="control-label" for="country">Recaptcha</label>
+		<div class="controls">
+			{{user.recaptchaOne}} + {{user.recaptchaTwo}} = <input type="text" class="input-mini" id="recaptcha" name="recaptcha" data-ng-model="user.recaptcha">
+		</div>
+	</div>
+	<div class="control-group">
+		<div class="controls">
+			<label class="checkbox">
+        		<input type="checkbox" data-ng-model="user.iAgree"> I agree <a href="#/terms">Terms of Service</a>
+      		</label>
 		</div>
 	</div>
 	<div class="form-actions">
-		<button type="submit" class="btn btn-primary" data-ng-click="login()">
+		<!-- 
+		<button type="submit" class="btn btn-primary" data-ng-click="register()">
 			<i class="icon-signin"></i>&nbsp;Register
 		</button>
+		-->
+		<a href="#loginStart" class="btn btn-primary"><i class="icon-signin"></i>&nbsp;Register</a>
 		&nbsp;&nbsp;&nbsp;&nbsp;
 		<button type="reset" class="btn">Reset</button>
     </div>
@@ -96,7 +114,7 @@
 
 <div class="span6">
 
-	<form class="form-horizontal">
+	<form class="form-horizontal" id="loginStart">
 	<fieldset>
 		<legend>Log In</legend>
 		<div class="control-group">
@@ -120,9 +138,16 @@
 	    </div>
 	</fieldset>	
 	</form>
-
-	<div class="span6">&nbsp;</div>
-
+	<form class="form-inline">
+		<legend>Reset Password</legend>
+       <label class="control-label" for="userId">User/Email Id</label>
+		<input type="text" class="input-large" id="userId" name="userId" data-ng-model="userId">
+		<!-- 
+		<button type="submit" class="btn btn-primary" data-ng-click="reset()">Reset Password</button>
+		-->
+		<a href="#loginStart" class="btn btn-primary">Reset Password</a>
+	</form>
+	<hr/>
 	<div class="span6">
 
 		<ul class="inline">

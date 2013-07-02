@@ -1,4 +1,5 @@
 def root = new XmlSlurper().parseText('temp/t.txt')
+
 def options = root.options
 for(int i = 0; i < options.size(); i++) {
 //  <option data-offset="-36000" value="Hawaii" >(GMT-10:00) Hawaii</option>	

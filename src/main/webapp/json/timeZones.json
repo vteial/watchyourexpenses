@@ -2,7 +2,7 @@
     "code": 0,
     "description": "Success",
     "data": [
-      { "dataOffset" : "", "value" : "", "displayValue" : "-------------"},
+      { "dataOffset" : "", "value" : "", "displayValue" : "<Select Time Zone>"},
       { "dataOffset" : "-36000", "value" : "Hawaii", "displayValue" : "(GMT-10:00) Hawaii"},
       { "dataOffset" : "-32400", "value" : "Alaska", "displayValue" : "(GMT-09:00) Alaska"},
       { "dataOffset" : "-28800", "value" : "Pacific Time (US & Canada)", "displayValue" : "(GMT-08:00) Pacific Time (US & Canada)"},
