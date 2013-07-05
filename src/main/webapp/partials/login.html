@@ -100,12 +100,9 @@
 		</div>
 	</div>
 	<div class="form-actions">
-		<!-- 
 		<button type="submit" class="btn btn-primary" data-ng-click="register()">
 			<i class="icon-signin"></i>&nbsp;Register
 		</button>
-		-->
-		<a href="#loginStart" class="btn btn-primary"><i class="icon-signin"></i>&nbsp;Register</a>
 		&nbsp;&nbsp;&nbsp;&nbsp;
 		<button type="reset" class="btn">Reset</button>
     </div>
@@ -139,54 +136,83 @@
 	</fieldset>	
 	</form>
 	<form class="form-inline">
-		<legend>Reset Password</legend>
-       <label class="control-label" for="userId">User/Email Id</label>
-		<input type="text" class="input-large" id="userId" name="userId" data-ng-model="userId">
-		<!-- 
-		<button type="submit" class="btn btn-primary" data-ng-click="reset()">Reset Password</button>
-		-->
-		<a href="#loginStart" class="btn btn-primary">Reset Password</a>
+		<fieldset>
+			<legend>Reset Password</legend>
+	       	<label class="control-label" for="userId">User/Email Id</label>
+			<input type="text" class="input-large" id="userId" name="userId" data-ng-model="userId">
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<button type="submit" class="btn btn-primary" data-ng-click="resetPassword()">Reset Password</button>
+		</fieldset>			
 	</form>
-	<hr/>
-	<div class="span6">
-
-		<ul class="inline">
-			<li>
+	<!-- 
+	<table class="table">
+	<caption class="text-left"><strong>Log In With</strong></caption>
+	<tbody>
+		<tr>
+			<td>
+				<button class="btn btn-danger" popover-placement="top" popover="comming soon...">
+					<i class="icon-google-plus"></i>&nbsp;<b class="muted">|</b>&nbsp;Google+
+				</button>
+			</td>
+			<td>
+				<button class="btn btn-primary" popover-placement="top" popover="comming soon...">
+					<i class="icon-facebook"></i>&nbsp;<b class="muted">|</b>&nbsp;Facebook
+				</button>
+			</td>
+			<td>
+				<button class="btn btn-info" popover-placement="top" popover="comming soon...">
+					<i class="icon-facebook"></i>&nbsp;<b class="muted">|</b>&nbsp;Twitter
+				</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button class="btn btn-danger" popover-placement="top" popover="comming soon...">
+					<i class="icon-windows"></i>&nbsp;<b class="muted">|</b>&nbsp;Windows
+				</button>
+			</td>
+			<td>
+				<button class="btn btn-primary" popover-placement="top" popover="comming soon...">
+					<i class="icon-github"></i>&nbsp;<b class="muted">|</b>&nbsp;Github
+				</button>
+			</td>
+			<td>
+				<button class="btn btn-info" popover-placement="top" popover="comming soon...">
+					<i class="icon-linkedin"></i>&nbsp;<b class="muted">|</b>&nbsp;Linkedin
+				</button>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+	-->
+	<form class="from-inline">
+		<fieldset>
+			<legend>Log In With</legend>
 			<button class="btn btn-danger" popover-placement="top" popover="comming soon...">
-				<i class="icon-google-plus"></i>&nbsp;<b class="muted">|</b>&nbsp;Login with google+
+				<i class="icon-google-plus"></i>&nbsp;<b class="muted">|</b>&nbsp;Google+
 			</button>
-			</li>
-			<li>
+			&nbsp;&nbsp;&nbsp;&nbsp;
 			<button class="btn btn-primary" popover-placement="top" popover="comming soon...">
-				<i class="icon-facebook"></i>&nbsp;<b class="muted">|</b>&nbsp;Login with facebook
+				<i class="icon-facebook"></i>&nbsp;<b class="muted">|</b>&nbsp;Facebook
 			</button>
-			</li>
-			<li>
+			&nbsp;&nbsp;&nbsp;&nbsp;
 			<button class="btn btn-info" popover-placement="top" popover="comming soon...">
-				<i class="icon-facebook"></i>&nbsp;<b class="muted">|</b>&nbsp;Login with twitter
+				<i class="icon-facebook"></i>&nbsp;<b class="muted">|</b>&nbsp;Twitter
 			</button>
-			</li>
-		</ul>
-	
-		<ul class="inline">
-			<li>
+			<br/><br/>
 			<button class="btn" popover-placement="bottom" popover="comming soon...">
-				<i class="icon-windows"></i>&nbsp;<b class="muted">|</b>&nbsp;Login with windows
+				<i class="icon-windows"></i>&nbsp;<b class="muted">|</b>&nbsp;Windows
 			</button>
-			</li>
-			<li>
+			&nbsp;&nbsp;&nbsp;&nbsp;
 			<button class="btn" popover-placement="bottom" popover="comming soon...">
-				<i class="icon-github"></i>&nbsp;<b class="muted">|</b>&nbsp;Login with github
+				<i class="icon-github"></i>&nbsp;<b class="muted">|</b>&nbsp;Github
 			</button>
-			</li>
-			<li>
+			&nbsp;&nbsp;&nbsp;&nbsp;
 			<button class="btn" popover-placement="bottom" popover="comming soon...">
-				<i class="icon-linkedin"></i>&nbsp;<b class="muted">|</b>&nbsp;Login with linkedin
+				<i class="icon-linkedin"></i>&nbsp;<b class="muted">|</b>&nbsp;Linkedin
 			</button>
-			</li>
-		</ul>
-	</div>
-
+		</fieldset>
+	</form>
 </div>
 
 

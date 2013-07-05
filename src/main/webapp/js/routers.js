@@ -1,19 +1,9 @@
 var router = function($stateProvider, $routeProvider, $urlRouterProvider,
 		appServiceFacade) {
-	//$urlRouterProvider.otherwise('/');
+	// $urlRouterProvider.otherwise('/');
 
 	$routeProvider.when('/', {
-		redirectTo : '/index'
-	});
-
-	var stateProvider = $stateProvider.state('index', {
-		url : '/index',
-		views : {
-			'viewA' : {
-				templateUrl : 'partials/index.html',
-				controller : 'indexController'
-			}
-		}
+		redirectTo : '/home'
 	});
 
 	stateProvider = $stateProvider.state('home', {
@@ -102,26 +92,6 @@ var router = function($stateProvider, $routeProvider, $urlRouterProvider,
 			'viewA' : {
 				templateUrl : 'partials/settings.html',
 				controller : 'settingsController'
-			}
-		}
-	});
-
-	stateProvider = $stateProvider.state('logout', {
-		url : '/logout',
-		views : {
-			'viewA' : {
-				templateUrl : 'partials/logout.html',
-				controller : 'logoutController'
-			}
-		}
-	});
-
-	var stateProvider = $stateProvider.state('login', {
-		url : '/login',
-		views : {
-			'viewA' : {
-				templateUrl : 'partials/login.html',
-				controller : 'loginController'
 			}
 		}
 	});
