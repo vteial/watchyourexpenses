@@ -8,7 +8,7 @@
 				</li>
 		    	<li class="divider-vertical"></li>
 		    	<li data-ng-class="{ active: \$state.includes('index') }">
-		    		<a href="#/index"><i class="icon-home icon-white"></i></a>
+		    		<a href="#/index"><i class="icon-home icon-white"></i>&nbsp;</a>
 		    	</li>
 		    	<li class="divider-vertical"></li>
 		    </ul>

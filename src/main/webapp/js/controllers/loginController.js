@@ -24,7 +24,7 @@ appControllers.controller('loginController', function($scope, $log, $state,
 		$log.error(errorMessage);
 	});
 
-	$scope.rigister = function() {
+	$scope.register = function() {
 		appServiceFacade.accessControlService.register().then(function(data) {
 		}, function(errorMessage) {
 			$log.error(errorMessage);

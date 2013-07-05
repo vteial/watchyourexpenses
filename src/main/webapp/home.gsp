@@ -70,6 +70,7 @@
 
 <script src="js/controllers.js" type="application/javascript"></script>
 <script src="js/controllers/loginController.js" type="application/javascript"></script>
+<script src="js/controllers/homeController.js" type="application/javascript"></script>
 <script src="js/controllers/xpensesController.js" type="application/javascript"></script>
 <script src="js/controllers/tagsController.js" type="application/javascript"></script>
 <script src="js/controllers/reportsController.js" type="application/javascript"></script>

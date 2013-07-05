@@ -1,7 +1,7 @@
 appServices.factory('accessControlService', function($log, $http, $q) {
 	var service = {};
 
-	service.authenticate = function() {
+	service.register = function() {
 		var deferred = $q.defer();
 		$http.post('register').success(function(data) {
 			deferred.resolve(data);
